@@ -1,4 +1,4 @@
-import '../../assets/scss/Notifications.scss'
+import '../assets/scss/Notifications.scss'
 import NotificationCard from './Notification-Card';
 import React, { useState } from "react";
 

@@ -1,5 +1,5 @@
 import { Outlet } from "react-router";
-import Sidenav_User from "./Sidenav_User";
+import Sidenav_User from "../components/SidenavUser";
 
 const UserMain = () => {
   return (

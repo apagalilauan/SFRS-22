@@ -8,6 +8,10 @@ import MainAdmin from './pages/MainAdmin';
 import Register from './pages/Register';
 import UsersList from './pages/UsersList';
 import MainForm from './pages/MainForm';
+import NotificationCard from './pages/Notification-Card';
+import NotificationPage from './pages/Notifications';
+import MainUser from './pages/MainUser';
+import UserDashboard from './pages/DashboardUser';
 
 function App() {
   return (
@@ -19,12 +23,17 @@ function App() {
 
             {/* private routes */}
             <Route path='/admin' element={<MainAdmin/>}>
+              <Route path='userdashboard' element={<UserDashboard/>}></Route>
               <Route path='dashboard' element={<Dashboard/>}></Route>
               <Route path='registration' element={<Register/>}></Route>
               <Route path='users-list' element={<UsersList/>}></Route>
               <Route path='reserve' element={<MainForm/>}></Route>
+              <Route path='notifications' element={<NotificationPage  />}></Route>
             </Route>
 
+            <Route path='requestor' element={<MainUser/>}>
+              <Route path='userdashboard' element={<UserDashboard/>}></Route>
+            </Route>
           </Routes>
       </Router>
       <ToastContainer />
