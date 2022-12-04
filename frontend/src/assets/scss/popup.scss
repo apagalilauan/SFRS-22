@@ -25,7 +25,6 @@
     background-color: rgba(0, 0, 0, 0.5);
     display: none;
 
-
     .p_close{
       z-index: 1;
       position: absolute;
@@ -190,3 +189,70 @@
       }
     }
   }
+ // Confirmation Popup
+ .confirmation_popup{
+  position: relative;
+  border-radius: 15px;
+  background-color: $color-blue;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  display: flex;  
+  align-items: center;
+  flex-direction: column;
+  width: 25vw;
+  padding: 10px;
+
+  .confirmation_header{
+    display:flex;
+    background-color: white;
+    width: 70px;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 200px;
+
+    .icon{
+      height: 33px;
+      width: 33px;
+      color: #2f4152;
+    }
+  }
+
+  .popup_text{
+    margin: 15px 40px;
+    font-weight: bold;
+    color: $color-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.popup_button{
+  display: flex;
+  flex-direction: row;
+  background-color: $color-white;
+  width: 100%;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+#btn{
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  font: $color-white;
+  color: $color-white;
+  margin: 10px;
+}
+.btnCancel{
+  background-color: $color-gray;
+}
+.btnConfirm{
+  background-color: #6CAA67;
+}

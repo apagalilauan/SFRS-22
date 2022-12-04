@@ -12,6 +12,7 @@ import NotificationCard from './pages/Notification-Card';
 import NotificationPage from './pages/Notifications';
 import MainUser from './pages/MainUser';
 import UserDashboard from './pages/DashboardUser';
+import Popup_Confirm from './components/Popup_Confirm';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Routes>
             <Route path='/' element={<Landing />}/>
             <Route path='/login' element={<Login />}/>
+            <Route path='/popup' element={<Popup_Confirm/>}/>
 
             {/* private routes */}
             <Route path='/admin' element={<MainAdmin/>}>
